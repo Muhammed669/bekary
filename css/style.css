@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    .container{
+        width: 85%;
+        margin: auto;
+    }
+    .clr{
+        clear: both;
+    }
+
+     /* start nav  */
+    .nav{
+        background-color: #fff;
+        padding-block: 20px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    .logo{
+        display: inline-block;
+        width: 100px;
+    }
+        .logo img{
+            width: 100%;
+        }
+        .nav .content{
+            display: inline-block;
+            width: calc(100% - 110px);
+            text-align: right;
+            
+        }
+        .nav .content ul li{
+            display: inline-block;
+            list-style: none;
+            margin-left: 30px;
+        }
+        .nav .content ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            transition: all .3s;
+        }
+        .nav ul li:hover a{
+            color: #916b40;
+        }
+     /* end nav  */
+/*--------------------------------------------------------------------------------*/
+        /* start header  */
+        .header{
+            height: 100dvh;
+            background: linear-gradient(rgba(0, 0, 0, 0.49)),url(./../images/drew-coffman-1872.jpg);
+            background-size: cover;
+            background-position: center;
+            overflow: auto;
+        }
+        .header .text{
+            color: white;
+            margin-top: 230px;
+            text-align: center;
+        }
+        .header .text p{
+            font-size: 25px;
+            margin-bottom: 30px;
+            padding-inline: 300px;
+            line-height: 2.5rem;
+        }
+        @media  (max-width: 1200px) {
+            .header .text p{
+              width: 100%;
+                padding-inline: 0;
+            }
+        }
+        .header .text h1{
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            font-size: 18px;
+            transition: all .3s;
+        }
+        .btn a:hover{
+            background-color: white;
+            color: black;
+        }
+        .btn a.learn{
+            background-color: #916b40;
+            border-color: #916b40;
+            transition: all .3s;
+        }
+        .btn a.learn:hover{
+            background-color: white;
+            color: black;
+            border-color: white;
+        }
+        .shape{
+            width: 25px;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 50px;
+            margin-inline: auto;
+            margin-top: 80px;
+        }
+        /* end header  */
+/*--------------------------------------------------------------------------------*/
+        /* start who are we */
+        .whoArewe{
+            padding-block: 100px;
+            background-color: #fff;
+        }
+        .whoArewe .image{
+            display: inline-block;
+            width: 45%;
+            vertical-align: middle;
+            /* float: left; */
+        }
+        .whoArewe .image img{
+            width: 100%;
+        }
+        .whoArewe .content{
+            display: inline-block;
+            width: 45%;
+            /* height: 800px; */
+            text-align: left;
+            margin-left: 90px;
+            /* background-color: aqua; */
+            vertical-align: middle;
+        }
+        @media (max-width: 1120px){
+            .whoArewe .image,
+            .whoArewe .content{
+                width: 100%;
+                margin: auto;
+                display: block;
+                text-align: center;
+            }
+            .whoArewe .content{
+                margin-top: 30px;
+            }
+        }
+        .whoArewe .content h2{
+            font-size: 35px;
+            padding-bottom: 40px;
+            font-weight: 400;
+        }
+        .whoArewe .content p{
+            font-size: 20px;
+            line-height: 2rem;
+        }
+        .whoArewe ul{
+            list-style: none;   
+            padding-block: 20px;
+        }
+        .whoArewe ul li{
+            font-size: 18px;
+            padding-block: 15px;
+        }
+        .whoArewe ul li i{
+            color: #916b40;
+            margin-right: 15px;
+            display: inline-block;
+            border: 2px solid gray;
+            border-radius: 50%;
+            padding: 12px;
+        }
+        /* end who are we */
+/*--------------------------------------------------------------------------------*/
+        /* start loction */
+.location{
+    padding-block: 100px;
+    background-color: #F8F8F8;
+}
+.location .content{
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    vertical-align: middle;
+}
+.location .content h2{
+    font-size: 35px;
+    padding-bottom: 40px;
+    font-weight: 400;
+}
+.location .content p{
+    font-size: 20px;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+.location .image{
+    display: inline-block;
+    width: 45%;
+    margin-left: 90px;
+    vertical-align: middle;
+}
+.location .image img{
+    width: 100%;
+}
+        /* end loction */
+/*--------------------------------------------------------------------------------*/
+        /* stat our baking */
+.our{
+    padding-block: 100px;
+    background-color: #fff;
+}
+.our .title{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.our .title h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.our .content{
+    width: 30%;
+    text-align: center;
+    float: left;
+    margin-left: 3.33%;
+}
+@media (max-width: 640px){
+    .our .content{
+        width: 100%;
+    }
+}
+.our .content  img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.our .content .text{
+    margin-bottom: 15px;
+    line-height: 2rem;
+}
+.our .content .text h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+        /* end our baking */
+/*--------------------------------------------------------------------------------*/
+        /* start contact information */
+.contact{
+    padding-block: 100px;
+    background-color: #F8F8F8;
+}
+.contact .content{
+    width: 47%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 3%;
+}
+.contact .content h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.contact .content p{
+    font-size: 20px;
+    line-height: 2rem;
+    margin-bottom: 30px;
+}
+.contact .content ul{
+    list-style: none;
+}
+.contact .content ul li{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.contact .content ul li i{
+    color: white;
+    background-color: rgb(145, 107, 64);
+    margin-right: 15px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 12px;
+}
+.contact .image{
+    width: 47%;
+    height: 600px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.contact .image iframe{
+    width: 100%;
+    height: 100%;
+    /* object-fit: none; */
+}
+        /* end contact information */
+/*--------------------------------------------------------------------------------*/
+        /* start footer section */
+        .footer{
+            padding-block: 50px;
+            background-color: #403D38;
+        }
+        .footer .about{
+            width: 24.5%;
+            float: left;
+            /* display: inline-block; */
+        }
+        .footer .about h4{
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .footer .about p{
+            color: #8B9696;
+            line-height: 2rem;
+            padding-right: 20px;
+            margin-bottom: 20px;
+        }
+        .footer .whyWE{
+            width: 24.5%;
+            float: left;
+            /* display: inline-block; */
+        }
+        .footer .whyWE h4{
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .footer .whyWE ul{
+            list-style: none;
+        }
+        .footer .whyWE ul li{
+            margin-bottom: 25px;
+            color: #8B9696;
+            border-bottom: 1px solid #8b96967e;
+            margin-right: 40px;
+            padding-bottom: 10px;
+            font-size: 14px;
+        } 
+        .footer .whyWE ul li.last{
+            border-bottom: none;
+        }  
+        .footer .hours{
+            width: 24.5%;
+            float: left;
+            /* display: inline-block; */
+        }
+        .footer .hours h4{
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .footer .hours ul{
+            list-style: none;
+        }
+        .footer .hours ul li{
+            margin-bottom: 25px;
+            color: #8B9696;
+            border-bottom: 1px solid #8b96967e;
+            margin-right: 40px;
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+        .footer .hours ul li.last{
+            border-bottom: none;
+        }   
+        .footer .contactUs{
+            width: 24.5%;
+            float: left;
+            /* display: inline-block; */
+        }
+        .footer .contactUs h4{
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .footer .contactUs ul{
+            list-style: none;
+            position: relative;
+        }
+        .footer .contactUs ul li{
+            margin-bottom: 25px;
+            color: #8B9696;
+            border-bottom: 1px solid #8b96967e;
+            margin-right: 40px;
+            padding-bottom: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: baseline;
+        }
+        .footer .contactUs ul li.last{
+            border-bottom: none;
+        }
+        .footer .contactUs .icon{
+            font-size: 17px;
+        }
+        .footer .contactUs .text1{
+            line-height: 2rem;
+        }
+        .footer .contactUs ul li i{
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        .footer .contactUs ul li span{
+            color: #8B9696;
+            line-height: 2rem;
+        }
+        .footer .contactUs ul li a{
+            text-decoration: none;
+            color: #8B9696;
+        }
+        .footer .layer{
+            position: absolute;
+            top: 60px;
+            left: 0;
+            opacity: 0.1;
+            width: 100%;
+        }
+        .footer .layer img{
+            width: 100%;
+            /* object-fit: cover; */
+        }
+        /* end footer section */
+/*--------------------------------------------------------------------------------*/
+/* start copyright*/
+
+.copy{
+    background-color: #353330;
+    padding-block: 60px;
+}
+.copy-content{
+text-align: center;
+color: #757660;
+}
+.copy-content img{
+    margin-bottom: 30px;
+}
+.copy-content p{
+margin-bottom: 20px;
+}
+.copy-content ul{
+    list-style: none;
+}
+.copy-content ul li{
+    display: inline-block;
+
+}
+.copy-content ul li i{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #403D38;
+    padding: 10px;
+    margin-left: 7px;
+    transition: all 1s;
+}
+.copy-content ul li.face:hover i{
+background-color: #3B5998;
+color: white;
+}
+.copy-content ul li.goo:hover i{
+background-color: #DD4B39;
+color: white;
+}
+.copy-content ul li.in:hover i{
+background-color: #007BB5;
+color: white;
+}
+.copy-content ul li.twit:hover i{
+background-color: #00ACED;
+color: white;
+}
+
+/* end copyright*/
